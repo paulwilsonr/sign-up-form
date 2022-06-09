@@ -31,33 +31,33 @@
                     <div class="formRow">
                         <div class="formItem">
                             <label for="firstName">FIRST NAME</label>
-                            <input class="inputBox" type="text" id="firstName">
+                            <input class="inputBox" type="text" id="firstName" required>
                         </div>
                         <div class="formItem">
                             <label for="lastName">LAST NAME</label>
-                            <input class="inputBox" type="text" id="lastName">
+                            <input class="inputBox" type="text" id="lastName" required>
                         </div>
                         
                     </div>
                     <div class="formRow">
                         <div class="formItem">
                             <label for="eMail">EMAIL</label>
-                            <input class="inputBox" type="email" id="eMail">
+                            <input class="inputBox" type="email" id="eMail" required>
                         </div>
                         <div class="formItem">
                             <label for="phoneNumber">PHONE NUMBER</label>
-                            <input class="inputBox" type="tel" id="phoneNumber">
+                            <input class="inputBox" type="tel" id="phoneNumber" required>
                         </div>
                     </div>
                     
                     <div class="formRow">
-                        <div class="formItem badPass">
+                        <div class="formItem passwordContainer noMatch">
                             <label for="password">PASSWORD</label>
-                            <input class="inputBox error password" type="password" id="password" value="a">
+                            <input class="inputBox password" type="password" id="password" required>
                         </div>
-                        <div class="formItem badPass">
+                        <div class="formItem passwordContainer">
                             <label for="confirmPassword">CONFIRM PASSWORD</label>
-                            <input class="inputBox error password" type="password" id="confirmPassword" value="a">
+                            <input class="inputBox password" type="password" id="confirmPassword" required invalid>
                         </div>
                     </div>
                 </div>
