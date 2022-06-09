@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./assets/Norse-Bold.otf);
+}
+:root {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.banner {
+    width: max(300px, 40vw);
+    height: max(100vh,650px);
+    background-image: url(./assets/halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.signUp {
+    width: 60vw;
+    height: max(100vh,650px);
+    z-index: 2;
+    background-color: rgb(249, 250, 251);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title {
+    background-color: rgba(0, 0, 0, 0.33);
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22vh;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: Norse-Bold;
+    font-size: 95px;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
+#odinLogo {
+    height: 130px;
+    margin: 0;
+    padding: 0;
+}
+
+#formContainer {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 4px 5px 0px rgb(212, 212, 212);
+    padding: 10px;
+    padding-left: 50px;
+}
+
+#submitButton {
+    margin: 33px;
+    margin-left: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(90,109,76);
+    width: 230px;
+    height: 53px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight:900;
+}
+
+.introText {
+    font-size: 1.4rem;
+    font-weight: 550;
+    line-height: 1.6rem;
+}
+
+.intro {
+    margin: 150px 150px 50px 50px;
+}
+
+#logInText {
+    margin-left: 50px;
+    font-weight: 600;
+}
+
+a {
+    color: rgb(90,109,76);
+    text-decoration: none;
+}
+
+.formItem {
+    display:flex;
+    flex-direction: column;
+    width:300px;
+    margin-right: 30px;
+}
+
+.inputBox {
+    border-style: hidden;
+    border: 2px rgb(229,231,235) solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 250px;
+    margin-top: 3px;
+    
+}
+
+.inputBox:focus {
+    /*outline: rgb(55, 88, 211);*/
+    outline: none;
+    border: 2px rgb(55, 88, 211) solid;
+    box-shadow: 1px 4px 5px 0px rgb(212, 212, 212);
+}
+
+label {
+    font-size: .8rem;
+    color: rgb(72, 80, 90);
+    font-weight: 600;
+}
+
+#formItemContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.error {
+    border: 2px rgb(204, 103, 107) solid;
+}
+
+.badPass::after {
+    content: "*Passwords do not match";
+    color: rgb(204, 103, 107);
+    font-size: .8rem;
+}

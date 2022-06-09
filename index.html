@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Project: Sign-Up</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+<body>
+    <div class="banner">
+        <div class="title">
+            <img id="odinLogo" src="./assets/odin-lined.png">
+            <h1>ODIN</h1>
+        </div>
+    </div>
+    <div class="signUp">
+        <div class="intro">
+            <p class="introText">This is not a real online service! You know you need something like this in your life
+                to help you realize
+                your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p class="introText">You <em>know</em> you want to.</p>
+        </div>
+        <div id="formContainer">
+            <H2>Let's do this!</H2>
+            <form action="" method="post" class="signUpForm">
+                <div id="formItemContainer">
+                    <div class="formRow">
+                        <div class="formItem">
+                            <label for="firstName">FIRST NAME</label>
+                            <input class="inputBox" type="text" id="firstName">
+                        </div>
+                        <div class="formItem">
+                            <label for="lastName">LAST NAME</label>
+                            <input class="inputBox" type="text" id="lastName">
+                        </div>
+                        
+                    </div>
+                    <div class="formRow">
+                        <div class="formItem">
+                            <label for="eMail">EMAIL</label>
+                            <input class="inputBox" type="email" id="eMail">
+                        </div>
+                        <div class="formItem">
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input class="inputBox" type="tel" id="phoneNumber">
+                        </div>
+                    </div>
+                    
+                    <div class="formRow">
+                        <div class="formItem badPass">
+                            <label for="password">PASSWORD</label>
+                            <input class="inputBox error password" type="password" id="password" value="a">
+                        </div>
+                        <div class="formItem badPass">
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input class="inputBox error password" type="password" id="confirmPassword" value="a">
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <input type="submit" value="Create Account" id="submitButton">
+        </form>
+        <p id="logInText">Already have an account? <a href="">Log in</a></p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
